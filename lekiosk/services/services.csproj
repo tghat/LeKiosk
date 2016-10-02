@@ -39,7 +39,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="common\EntityService.cs" />
+    <Compile Include="common\IEntityService.cs" />
+    <Compile Include="common\IService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Users\IUserService.cs" />
+    <Compile Include="Users\UserService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\entities\entities.csproj">
+      <Project>{940a0ff0-a298-4c4f-bfda-7b0fd691cefa}</Project>
+      <Name>entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\repositories\repositories.csproj">
+      <Project>{92f0af40-6c75-42d1-9dd2-8a4be63dedff}</Project>
+      <Name>repositories</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
