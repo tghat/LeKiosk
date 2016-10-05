@@ -5,6 +5,6 @@ namespace repositories.Users
 {
     public interface IUserRepository : IGenericRepository<User>
     {
-        void CreateUser(User user);
+
     }
 }

@@ -5,6 +5,6 @@ namespace services.Users
 {
     public interface IUserService : IEntityService<User>
     {
-        void Register(User user);
+        bool Login(string username, string password);
     }
 }

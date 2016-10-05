@@ -10,11 +10,6 @@ namespace repositories.Users
 {
     public class UserRepository : GenericRepository<LekioskEntities, User>, IUserRepository
     {
-        public void CreateUser(User user)
-        {
-            Context.Users.Add(user);
-            Context.SaveChanges();
-            return;
-        }
+        
     }
 }

@@ -22,10 +22,11 @@ namespace services.Users
             _userRepository = userRepository;
         }
 
-        public void Register(User user)
+        public bool Login(string username, string password)
         {
-            _userRepository.CreateUser(user);
-            return;
+            //var hashed_password = FormsAuthentication.HashPasswordForStoringInConfigFile(password, "MD5");
+            //var user = _userRepository.FindBy(x => x.UserName.Equals(username) && x.Password.Equals(hashed_password));
+            return false;
         }
     }
 }
